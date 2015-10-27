@@ -3,6 +3,6 @@
 }
 
 .user-name {
-  /*font-color: $font_color;*/
+  color: $font_color;
   font-size: $font_size;
 }
