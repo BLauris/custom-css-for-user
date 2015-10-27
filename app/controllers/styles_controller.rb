@@ -22,7 +22,7 @@ class StylesController < ApplicationController
   private
 
   def style_params
-    params.require(:style).permit(:logo, :background_color, :font_color, :font_style, :font_size)
+    params.require(:style).permit(:logo, :background_color, :font_color, :font_style, :font_size, :logo)
   end
 
 end

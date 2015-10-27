@@ -1,8 +1,25 @@
+@import "defaults";
+
 .container{
   background-color: $background_color;
+}
+
+.logo-placeholder{
+  display: block;
+  float: left;
+  width: 200px;
+  height: 115px;
+  margin-right: 20px;
 }
 
 .user-name {
   color: $font_color;
   font-size: $font_size;
+  font-style: $font-style;
 }
+
+body{
+  width: 960px;
+  margin:50px auto;
+}
+

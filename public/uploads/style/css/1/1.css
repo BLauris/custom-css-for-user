@@ -1,6 +1,1 @@
-$background_color : #3292a1;
-
-$font_style : '';
-$font_size : '30px';
-
-@import "application";
+.container{background-color:#3292a1}.logo-placeholder{display:block;float:left;width:200px;height:200px;margin-right:20px;background:transparent url("download (1).jpg") top left/100% no-repeat !important}.user-name{color:white;font-size:100px;font-style:italic}body{width:960px;margin:50px auto}
