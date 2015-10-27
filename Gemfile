@@ -28,6 +28,7 @@ gem 'carrierwave', '~> 0.10.0'
 gem 'pry'
 
 gem 'haml'
+gem 'user_stylesheet'
 
 group :development, :test do
   gem 'byebug'
@@ -37,4 +38,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
