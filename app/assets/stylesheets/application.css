@@ -1,0 +1,8 @@
+.container{
+  background-color: $background_color;
+}
+
+.user-name {
+  /*font-color: $font_color;*/
+  font-size: $font_size;
+}

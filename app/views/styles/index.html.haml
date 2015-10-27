@@ -1,0 +1,6 @@
+.user-name  
+  = @current_user.first_name
+  = @current_user.last_name
+%hr
+  = link_to "Create new custom style", new_style_path(@current_style.id)
+

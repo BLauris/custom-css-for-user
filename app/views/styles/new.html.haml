@@ -1,0 +1,23 @@
+%h2 Create your custom css!!!
+= form_for @style do |f|
+  / %hr
+  / = f.label :logo
+  / = f.file_field :logo
+  %hr
+  = f.label :background_color
+  %br
+  = f.text_field :background_color
+  %hr
+  = f.label :font_color
+  %br
+  = f.text_field :font_color
+  %hr
+  = f.label :font_style
+  %br
+  = f.text_field :font_style
+  %hr
+  = f.label :font_size
+  %br
+  = f.text_field :font_size
+  %hr
+  = f.submit "Save"

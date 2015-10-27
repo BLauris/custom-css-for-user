@@ -1,0 +1,6 @@
+$background_color : #3292a1;
+
+$font_style : '';
+$font_size : '30px';
+
+@import "application";
