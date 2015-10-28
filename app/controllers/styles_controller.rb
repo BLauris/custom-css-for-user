@@ -1,17 +1,17 @@
 class StylesController < ApplicationController
+  before_action :style, only: [:edit, :update]
 
   def index
 
   end
 
-  def new
-    @style = current_user.styles.new
+  def edit
+    
   end
 
-  def create
-    @style = current_user.styles.new(style_params)
-    if @style.save
-      generate_stylesheet = GenerateCustomStyle.new(@style.id)
+  def update
+    generate_stylesheet = GenerateCustomStyle.new(@style.id)
+    if @style.update_attributes(style_params)
       generate_stylesheet.compile
       redirect_to root_path
     else
@@ -23,6 +23,10 @@ class StylesController < ApplicationController
 
   def style_params
     params.require(:style).permit(:logo, :background_color, :font_color, :font_style, :font_size, :logo)
+  end
+
+  def style
+    @style ||= current_user.styles.find(params[:id])
   end
 
 end

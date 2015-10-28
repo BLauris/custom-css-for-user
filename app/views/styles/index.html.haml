@@ -3,5 +3,7 @@
   .user-name  
     = @current_user.first_name
     = @current_user.last_name
+  .email
+    = link_to @current_user.email, "#"
 %hr
-  = link_to "Create new custom style", new_style_path
+  = link_to "Edit my style", edit_style_path(@current_style)

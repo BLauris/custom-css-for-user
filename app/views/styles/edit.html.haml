@@ -1,8 +1,16 @@
 %h2 Create your custom css!!!
+
+- if @style.errors.full_messages.any?
+  - @style.errors.full_messages.each do |error_message|
+    = error_message if @style.errors.full_messages.first == error_message
+    %br/
+
 = form_for @style do |f|
-  / %hr
-  / = f.label :logo
-  / = f.file_field :logo
+  %hr
+  = image_tag @current_style.logo.thumb.url
+  %br
+  = f.label :logo
+  = f.file_field :logo
   %hr
   = f.label :background_color
   %br
