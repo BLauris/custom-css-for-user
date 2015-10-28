@@ -1,28 +1,40 @@
 @import "defaults";
 
 .container{
-  height: 200px;
+  height: $block_height;
   background-color: $background_color;
 }
 
 .logo-placeholder{
   background-image: url($logo_url);
   background-repeat:no-repeat;
+  background-color: white;
   display: block;
   float: left;
-  width: 300px;
+  width: 320px;
   height: 200px;
   margin-right: 20px;
 }
 
 .user-name {
-  color: $font_color;
-  font-size: $font_size;
-  font-style: $font-style;
+  color: $name_color;
+  font-size: $name_size;
+  font-style: $name_style;
+}
+
+.text{
+  color: $text_color;
+  font-size: $text_size;
+  font-style: $text_style; 
+}
+
+.email{
+  color: $email_color;
+  font-size: $email_size;
+  font-style: $email_style; 
 }
 
 body{
   width: 960px;
   margin:50px auto;
 }
-

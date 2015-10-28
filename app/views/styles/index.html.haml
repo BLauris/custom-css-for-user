@@ -3,7 +3,9 @@
   .user-name  
     = @current_user.first_name
     = @current_user.last_name
+  .text
+    = @current_user.text
   .email
-    = link_to @current_user.email, "#"
+    = link_to "Email me: #{@current_user.email}", "#"
 %hr
   = link_to "Edit my style", edit_style_path(@current_style)

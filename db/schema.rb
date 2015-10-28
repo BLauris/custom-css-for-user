@@ -19,9 +19,16 @@ ActiveRecord::Schema.define(version: 20151026124647) do
   create_table "styles", force: :cascade do |t|
     t.integer  "user_id",          null: false
     t.string   "background_color"
-    t.string   "font_color"
-    t.string   "font_style"
-    t.string   "font_size"
+    t.string   "block_height"
+    t.string   "name_color"
+    t.string   "name_style"
+    t.string   "name_size"
+    t.string   "text_color"
+    t.string   "text_style"
+    t.string   "text_size"
+    t.string   "email_color"
+    t.string   "email_style"
+    t.string   "email_size"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "logo"
@@ -32,6 +39,7 @@ ActiveRecord::Schema.define(version: 20151026124647) do
     t.string   "first_name", null: false
     t.string   "last_name",  null: false
     t.string   "email",      null: false
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
